@@ -32,6 +32,7 @@
                         <td>{{ $product->price }}$</td>
                         <td>{{ $product->description }}</td>
                         <td ><a role="button" href="{{ route('products.show',$product->id) }}" class="btn btn-primary">Chi tiết</a> </td>
+                        <td></td>
 
 
                     </tr>

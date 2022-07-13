@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\APIController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,3 +20,4 @@ Route::get('/', function () {
 });
 route::resource("/products", ProductController::class);
 
+Route::get('/get-product-by-keyword', [APIController::class, 'searchByName']);
